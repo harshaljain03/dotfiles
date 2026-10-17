@@ -1,2 +1,6 @@
-# dotfiles
-My dotfiles synced from localhost and remote machines
+# Dotfiles symlinked on my machine
+
+### Install with stow:
+```bash
+stow .
+```
