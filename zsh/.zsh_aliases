@@ -108,11 +108,7 @@ alias activate='source .venv/bin/activate'
 # Tools in /opt
 # ------------------------------------------------------------
 alias sqlmap='sudo /opt/sqlmap/sqlmap.py'
-#alias hashcat='/home/phoenix/.local/bin/hashcat'     #added to PATH
 alias testssl='sudo /opt/testssl.sh/testssl.sh'
-alias dirsearch='sudo /opt/dirsearch/dirsearch.sh'
 alias js2pdf='java -jar /opt/JS2PDFInjector/JS2PDFInjector-1.0.jar'
 alias searchsploit='/opt/exploitdb/searchsploit'
-alias jwt-tool='/opt/jwt_tool/jwt_tool.sh'
 alias mobsf='sudo docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest'
-alias scout='/opt/ScoutSuite/scout.sh'

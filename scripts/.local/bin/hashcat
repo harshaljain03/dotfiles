@@ -1,0 +1,15 @@
+#!/bin/bash
+HC_DIR="/mnt/c/Tools/hashcat"
+
+args=()
+for arg in "$@"; do
+    # if it looks like an existing file/path, convert it to a Windows path
+    if [[ -e "$arg" ]]; then
+        args+=("$(wslpath -w "$(realpath "$arg")")")
+    else
+        args+=("$arg")
+    fi
+done
+
+cd "$HC_DIR" || exit 1
+./hashcat.exe "${args[@]}"

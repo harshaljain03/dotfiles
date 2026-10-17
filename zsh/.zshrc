@@ -102,13 +102,13 @@ if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     ZSH_HIGHLIGHT_THEME="catppuccin_macchiato"
 
     if [ "$ZSH_HIGHLIGHT_THEME" = "catppuccin_latte" ]; then
-        . /home/phoenix/.local/share/zsh-syntax-highlighting/catppuccin_latte-zsh-syntax-highlighting.zsh
+        . /home/phoenix/.config/zsh/plugins/zsh-syntax-highlighting/catppuccin_latte-zsh-syntax-highlighting.zsh
     elif [ "$ZSH_HIGHLIGHT_THEME" = "catppuccin_frappe" ]; then
-        . /home/phoenix/.local/share/zsh-syntax-highlighting/catppuccin_frappe-zsh-syntax-highlighting.zsh
+        . /home/phoenix/.config/zsh/plugins/zsh-syntax-highlighting/catppuccin_frappe-zsh-syntax-highlighting.zsh
     elif [ "$ZSH_HIGHLIGHT_THEME" = "catppuccin_macchiato" ]; then
-        . /home/phoenix/.local/share/zsh-syntax-highlighting/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+        . /home/phoenix/.config/zsh/plugins/zsh-syntax-highlighting/catppuccin_macchiato-zsh-syntax-highlighting.zsh
     elif [ "$ZSH_HIGHLIGHT_THEME" = "catppuccin_mocha" ]; then
-        . /home/phoenix/.local/share/zsh-syntax-highlighting/catppuccin_mocha-zsh-syntax-highlighting.zsh
+        . /home/phoenix/.config/zsh/plugins/zsh-syntax-highlighting/catppuccin_mocha-zsh-syntax-highlighting.zsh
     fi
 
 fi
