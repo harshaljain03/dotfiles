@@ -4,3 +4,6 @@
 ```bash
 stow .
 ```
+
+> [!NOTE]
+> Please read the files before use as it's hardcoded for my user.

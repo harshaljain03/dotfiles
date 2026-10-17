@@ -1,0 +1,118 @@
+# ------------------------------------------------------------
+# Shell & History
+# ------------------------------------------------------------
+alias history="history 0"               # force zsh to show the complete history
+alias hg='history | grep -i'            # search history: hg ssh
+alias c='clear'
+alias reload='source ~/.zshrc'
+alias path='echo $PATH | tr ":" "\n"'   # readable $PATH
+alias h='history | tail -30'            # recent commands
+
+# ------------------------------------------------------------
+# Colorized Output
+# ------------------------------------------------------------
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip --color=auto'
+alias diff='diff --color=auto'
+# egrep/fgrep are deprecated and warn on modern grep; use these instead
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
+
+# ------------------------------------------------------------
+# Listing
+# ------------------------------------------------------------
+alias ll='ls -lh'
+alias la='ls -lah'
+alias l='ls -CF'
+alias lt='ls -lhtr'                     # sort by time, newest last
+alias lS='ls -lhSr'                     # sort by size, largest last
+
+# ------------------------------------------------------------
+# Navigation
+# ------------------------------------------------------------
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# ------------------------------------------------------------
+# Safety Nets
+# ------------------------------------------------------------
+alias cp='cp -i'                        # prompt before overwrite
+alias mv='mv -i'
+alias rm='rm -I'                        # prompt once if deleting 3+ files or recursing
+alias mkdir='mkdir -pv'
+
+# ------------------------------------------------------------
+# Package Management (apt)
+# ------------------------------------------------------------
+alias aptu='sudo apt update'
+alias upgrade='sudo apt update && sudo apt full-upgrade'      # shows the plan first
+alias apti='sudo apt install'
+alias apts='apt search'
+alias aptshow='apt show'
+alias aptl='apt list --upgradable'
+
+# ------------------------------------------------------------
+# Privilege
+# ------------------------------------------------------------
+alias root='sudo su -'
+
+# ------------------------------------------------------------
+# WSL / Windows Integration
+# ------------------------------------------------------------
+alias explorer='explorer.exe .'
+alias open='explorer.exe'               # open <file|folder> in Windows
+alias winhome='cd /mnt/c/Users/Phoenix/'
+alias windown='cd /mnt/c/Users/Phoenix/Downloads'
+alias windesk='cd /mnt/c/Users/Phoenix/Desktop'
+alias winget='winget.exe'
+alias winip='ipconfig.exe'
+
+# ------------------------------------------------------------
+# System & Monitoring
+# ------------------------------------------------------------
+alias ff='fastfetch'
+alias df='df -h'
+alias free='free -h'
+alias psg='ps aux | grep -i'            # psg nginx
+alias sysinfo='uname -a && echo && lsb_release -a 2>/dev/null'
+
+# ------------------------------------------------------------
+# Networking
+# ------------------------------------------------------------
+alias publicip='curl -s ifconfig.me && echo'
+alias localip="ip -4 -br addr"
+alias ports='ss -tulpn'                 # listening ports + owning process
+alias ping5='ping -c 5'
+
+# ------------------------------------------------------------
+# Nessus
+# ------------------------------------------------------------
+alias nessus_start='sudo systemctl start nessusd.service'
+alias nessus_stop='sudo systemctl stop nessusd.service'
+alias nessus_restart='sudo systemctl restart nessusd.service'
+alias nessus_status='systemctl status nessusd.service --no-pager'
+# UI: https://localhost:8834
+
+# ------------------------------------------------------------
+# Python / Dev
+# ------------------------------------------------------------
+alias venv='python3 -m venv .venv'
+alias activate='source .venv/bin/activate'
+
+# ------------------------------------------------------------
+# Tools in /opt
+# ------------------------------------------------------------
+alias sqlmap='sudo /opt/sqlmap/sqlmap.py'
+#alias hashcat='/home/phoenix/.local/bin/hashcat'     #added to PATH
+alias testssl='sudo /opt/testssl.sh/testssl.sh'
+alias dirsearch='sudo /opt/dirsearch/dirsearch.sh'
+alias js2pdf='java -jar /opt/JS2PDFInjector/JS2PDFInjector-1.0.jar'
+alias searchsploit='/opt/exploitdb/searchsploit'
+alias jwt-tool='/opt/jwt_tool/jwt_tool.sh'
+alias mobsf='sudo docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest'
+alias scout='/opt/ScoutSuite/scout.sh'
