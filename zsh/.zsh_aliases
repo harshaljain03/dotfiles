@@ -107,7 +107,7 @@ alias activate='source .venv/bin/activate'
 # ------------------------------------------------------------
 # Tools in /opt
 # ------------------------------------------------------------
-# alias sqlmap='sudo /opt/sqlmap/sqlmap.py'
+alias sqlmap='sudo /opt/sqlmap/sqlmap.py'
 alias testssl='sudo /opt/testssl.sh/testssl.sh'
 alias js2pdf='java -jar /opt/JS2PDFInjector/JS2PDFInjector-1.0.jar'
 alias searchsploit='/opt/exploitdb/searchsploit'
